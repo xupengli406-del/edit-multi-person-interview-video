@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "template_only": true,
+  "clock": "final_output_integer_frames",
+  "instructions": "Replace all example IDs, frames and descriptions using actual speech and the current EDL. This is a planning aid, not source evidence.",
+  "scene": {
+    "id": "relationship-a",
+    "question": "本段真实提问",
+    "source_caption_ids": [
+      "c003"
+    ],
+    "start_frame": 90,
+    "end_frame": 270,
+    "mode": "diagram_with_live_picture_in_picture",
+    "viewer_takeaway": "当前条件如何改变选择",
+    "main_anchor": {
+      "id": "task",
+      "position_policy": "stable_while_branches_grow"
+    },
+    "nodes": [
+      {
+        "id": "task",
+        "text": "任务",
+        "enter_frame": 100
+      },
+      {
+        "id": "choice",
+        "text": "选择",
+        "enter_frame": 135
+      }
+    ],
+    "links": [
+      {
+        "from": "task",
+        "to": "choice",
+        "meaning": "原话支持的选择过程",
+        "draw_start_frame": 140,
+        "draw_end_frame": 155
+      }
+    ],
+    "completion": {
+      "last_information_complete_frame": 155,
+      "read_hold_until_frame": 210,
+      "exit_start_frame": 240
+    },
+    "lifecycle": {
+      "enter": "真实原话开始解释关系",
+      "hold": "分支与完成态需要阅读",
+      "change": "新增条件才改变连接和状态",
+      "exit": "关系讲完回现场承接下一句"
+    },
+    "persistent_context": {
+      "text": "仍影响下一句的必要条件",
+      "until_semantic_reason": "该条件不再适用时更新或退出"
+    },
+    "suppresses": [
+      "ordinary_header_if_competing"
+    ],
+    "next": "回现场接真实下一句"
+  },
+  "review_record": {
+    "file_sha256": null,
+    "visual_playback_windows": [],
+    "speed": 1,
+    "display_width_px": 360,
+    "listening_performed": false,
+    "limitations": []
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "style_id": "selected-central-comic-panels-natural-type",
+  "status": "user_selected_default_for_this_skill",
+  "scope": "Covers for complete multi-person interview production; current explicit requests override.",
+  "visual": {
+    "panels": "integrated_unequal_thick_black_dividers",
+    "people": "recognizable_comic_illustrations_from_current_real_identity_references",
+    "palette_relationship": "warm_orange_coral_wood_against_cool_blue_charcoal",
+    "central_plaque": "continuous_dark_reading_area_clear_of_faces_hands_and_contact_points",
+    "reading_order": [
+      "complete_topic_and_viewing_reason",
+      "necessary_support",
+      "grouped_real_logos"
+    ],
+    "font_preference": "licensed Noto Sans SC/CJK SC Black 900 or a legible authorized substitute",
+    "glyph_scale_x": 1.0,
+    "glyph_scale_y": 1.0,
+    "logo_count": "derive_from_current_topic_not_fixed"
+  },
+  "template_notes": "Copy one ratio into a project config, replace asset paths and copy, derive keepouts from actual artwork, then measure and view. Do not copy people or product lists from another clip.",
+  "ratios": {
+    "3:4": {
+      "canvas": [
+        1242,
+        1656
+      ],
+      "art": "art/comic-3x4.png",
+      "font": {
+        "path": "fonts/approved-font.ttf",
+        "weight": 900
+      },
+      "safe_rect": [
+        30,
+        30,
+        1182,
+        1596
+      ],
+      "main": {
+        "text": "替换为本期完整问题",
+        "size": 136,
+        "center_x": 621,
+        "baseline": 742,
+        "outline": 6,
+        "shadow": [
+          3,
+          4
+        ]
+      },
+      "subtitle": {
+        "text": "替换或删除必要补充",
+        "size": 40,
+        "center_x": 621,
+        "baseline": 815,
+        "outline": 3,
+        "shadow": [
+          2,
+          2
+        ]
+      },
+      "logo_group": {
+        "center_x": 621,
+        "center_y": 895,
+        "tile_size": 110,
+        "gap": 32,
+        "rows": 1,
+        "row_gap": 20,
+        "padding": 10
+      },
+      "logos": [],
+      "keepouts": [],
+      "people_present": true
+    },
+    "4:3": {
+      "canvas": [
+        1600,
+        1200
+      ],
+      "art": "art/comic-4x3.png",
+      "font": {
+        "path": "fonts/approved-font.ttf",
+        "weight": 900
+      },
+      "safe_rect": [
+        30,
+        30,
+        1540,
+        1140
+      ],
+      "main": {
+        "text": "替换为本期完整问题",
+        "size": 108,
+        "center_x": 800,
+        "baseline": 567,
+        "outline": 6,
+        "shadow": [
+          3,
+          4
+        ]
+      },
+      "subtitle": {
+        "text": "替换或删除必要补充",
+        "size": 36,
+        "center_x": 800,
+        "baseline": 634,
+        "outline": 3,
+        "shadow": [
+          2,
+          2
+        ]
+      },
+      "logo_group": {
+        "center_x": 800,
+        "center_y": 702,
+        "tile_size": 92,
+        "gap": 38,
+        "rows": 1,
+        "row_gap": 20,
+        "padding": 9
+      },
+      "logos": [],
+      "keepouts": [],
+      "people_present": true
+    },
+    "16:9": {
+      "canvas": [
+        1920,
+        1080
+      ],
+      "art": "art/comic-16x9.png",
+      "font": {
+        "path": "fonts/approved-font.ttf",
+        "weight": 900
+      },
+      "safe_rect": [
+        30,
+        30,
+        1860,
+        1020
+      ],
+      "main": {
+        "text": "替换为本期完整问题",
+        "size": 116,
+        "center_x": 960,
+        "baseline": 470,
+        "outline": 6,
+        "shadow": [
+          3,
+          4
+        ]
+      },
+      "subtitle": {
+        "text": "替换或删除必要补充",
+        "size": 38,
+        "center_x": 960,
+        "baseline": 540,
+        "outline": 3,
+        "shadow": [
+          2,
+          2
+        ]
+      },
+      "logo_group": {
+        "center_x": 960,
+        "center_y": 610,
+        "tile_size": 94,
+        "gap": 46,
+        "rows": 1,
+        "row_gap": 20,
+        "padding": 9
+      },
+      "logos": [],
+      "keepouts": [],
+      "people_present": true
+    }
+  }
+}

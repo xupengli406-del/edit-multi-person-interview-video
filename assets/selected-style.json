@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "preset_id": "warm-grey-dialogue-diagram-two-line-right-logo",
+  "selection_status": "user_selected_default",
+  "reference_canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "adaptation": "Scale geometry to the target canvas, then measure actual fonts and logos; preserve hierarchy and phone readability. User choices override this preset.",
+  "stage": {
+    "base": "live_dialogue",
+    "explanation": "diagram_with_live_picture_in_picture",
+    "return_to": "live_dialogue",
+    "palette": {
+      "paper": "#EAE6DE",
+      "panel": "#F8F6F0",
+      "ink": "#302A25",
+      "muted": "#6E645A",
+      "accent": "#995238",
+      "soft": "#EBDED1",
+      "line": "#CFC5B8"
+    },
+    "diagram_panel": {
+      "x": 80,
+      "y": 250,
+      "width": 820,
+      "height": 560,
+      "radius": 26
+    },
+    "live_picture_in_picture": {
+      "x": 966,
+      "y": 284,
+      "width": 873.6,
+      "height": 491.4,
+      "fit": "preserve_source_aspect_and_relevant_people"
+    },
+    "geometry_status": "scalable_1920x1080_reference_not_a_rule_for_all_aspect_ratios"
+  },
+  "header": {
+    "layout": "two_simultaneous_lines_right_logos",
+    "crop_height": 224,
+    "x": 80,
+    "y": 30,
+    "width": 1760,
+    "height": 168,
+    "padding_x": 32,
+    "padding_y": 18,
+    "radius": 22,
+    "text_logo_gap": 28,
+    "line_gap": 4,
+    "context_size": 36,
+    "context_line_height": 46,
+    "context_weight": 600,
+    "conclusion_size": 62,
+    "conclusion_line_height": 78,
+    "conclusion_weight": 760,
+    "logo_size": 128,
+    "wide_logo_width": 256,
+    "logo_gap": 14,
+    "logo_radius": 18,
+    "wide_logo_padding": 14,
+    "background": "#25211D",
+    "context_color": "#DFCBAF",
+    "conclusion_color": "#FCFAF5",
+    "logo_background": "#F8F6F0",
+    "font_family": "sans-serif",
+    "overflow_policy": "error_and_recompose_without_changing_meaning",
+    "simultaneous_content": true
+  },
+  "identity": {
+    "source": "one_user_confirmed_participant_registry",
+    "entry_condition": "actual_multi_person_wide_is_stable",
+    "exit": "whole_group",
+    "product_entry": "after_identity_group_exits_with_readable_separation",
+    "products_inside_identity": false,
+    "name_font_size": 62,
+    "bio_font_size": 44,
+    "reference_card": {
+      "top": 52,
+      "width": 548,
+      "height": 164,
+      "radius": 22
+    },
+    "placement": "derive_from_actual_people_in_stable_wide_not_fixed_speaker_index"
+  },
+  "subtitle": {
+    "mode": "real_inline_keyword_enlargement",
+    "scale_to": 1.4,
+    "normal_color": "#fffaf2",
+    "emphasis_color": "#f1cc72",
+    "hold": "until_whole_caption_exits",
+    "clock": "absolute_output_time",
+    "preallocated_keyword_gap": false,
+    "normal_font_size": 58,
+    "font_weight": 650,
+    "top": 884,
+    "line_height": 100,
+    "safe_text_width": 1730,
+    "background": "none",
+    "on_live_shadow": "0 2px 5px #000,0 0 3px rgba(0,0,0,.95)",
+    "on_paper_normal_color": "#302A25",
+    "on_paper_emphasis_color": "#995238",
+    "on_paper_shadow": "none"
+  },
+  "diagram": {
+    "main_anchor": "stable",
+    "entry": "when_current_relationship_starts_growing",
+    "completion_hold": "after_last_node_and_line_complete_then_allow_reading",
+    "relationship": "evidenced_by_actual_speech",
+    "reference_main_label_size": 52,
+    "reference_secondary_label_size": 34,
+    "fit_policy": "recompose_before_shrinking_below_phone_readability"
+  },
+  "attention_exclusion_groups": {
+    "primary_information": [
+      "identity",
+      "header",
+      "summary",
+      "teaser"
+    ]
+  },
+  "humor": {
+    "requires_real_interaction": true,
+    "mandatory_effect_count": null,
+    "sfx": "short_action_attached_below_dialogue"
+  },
+  "summary": {
+    "placement": "current_user_selected_narrative_position",
+    "conditions": "preserve_either_or_and_both_and_usage_scope",
+    "finish_reading_before_teaser": true,
+    "layout": "complete_group_in_available_clear_region_preserving_people_and_subtitles"
+  },
+  "assets_included": false,
+  "cover": {
+    "default_preset": "comic-cover-preset.json",
+    "reference": "../references/comic-panel-cover.md",
+    "selection": "central_comic_panels_natural_question_subtitle_real_logo_group",
+    "not_default": [
+      "photographic_people",
+      "side_title_layout",
+      "stretched_glyphs"
+    ]
+  },
+  "complete_delivery": {
+    "default": "video_and_full_local_publication_package",
+    "cover_ratios": [
+      "3:4",
+      "4:3",
+      "16:9"
+    ],
+    "subtitle_files": [
+      "Chinese",
+      "English",
+      "Chinese+English"
+    ],
+    "platform_copy": [
+      "Douyin",
+      "Xiaohongshu",
+      "WeChat Channels",
+      "Bilibili"
+    ],
+    "chapters": "current_output_clock_when_needed",
+    "usage_mapping": true,
+    "verified_zip": true,
+    "automatic_publication": false
+  }
+}

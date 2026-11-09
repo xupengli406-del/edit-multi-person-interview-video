@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "example_only": true,
+  "note": "Synthetic dialogue demonstrates structure only; replace all identities, speech, paths and frame ranges with verified project data.",
+  "revision": "example",
+  "fps": {
+    "num": 30,
+    "den": 1
+  },
+  "frame_count": 360,
+  "sources": [
+    {
+      "id": "recording-a",
+      "path": "originals/recording-a.mp4",
+      "frame_count": 1800,
+      "fps": {
+        "num": 30,
+        "den": 1
+      }
+    }
+  ],
+  "audio": {
+    "path": "media/dialogue.wav",
+    "sample_rate": 48000,
+    "sample_count": 576000,
+    "status": "example_only"
+  },
+  "participants": [
+    {
+      "id": "host",
+      "display_name": "主持人",
+      "bio": "用户确认的简介",
+      "wide_position": "left",
+      "aliases": [],
+      "confirmation_source": "example_only"
+    },
+    {
+      "id": "guest",
+      "display_name": "嘉宾",
+      "bio": "用户确认的简介",
+      "wide_position": "right",
+      "aliases": [],
+      "confirmation_source": "example_only"
+    }
+  ],
+  "edl": [
+    {
+      "id": "hook-a",
+      "source_id": "recording-a",
+      "in_frame": 600,
+      "out_frame": 660,
+      "output_start": 0,
+      "speed": 1,
+      "purpose": "hook_question"
+    },
+    {
+      "id": "hook-b",
+      "source_id": "recording-a",
+      "in_frame": 900,
+      "out_frame": 930,
+      "output_start": 60,
+      "speed": 1,
+      "purpose": "real_answer"
+    },
+    {
+      "id": "body",
+      "source_id": "recording-a",
+      "in_frame": 0,
+      "out_frame": 270,
+      "output_start": 90,
+      "speed": 1,
+      "purpose": "original_question_context"
+    }
+  ],
+  "captions": [
+    {
+      "id": "c001",
+      "start_frame": 0,
+      "end_frame": 60,
+      "speaker_id": "host",
+      "text": "你选哪一个？",
+      "source_ranges": [
+        {
+          "edl_id": "hook-a",
+          "source_id": "recording-a",
+          "in_frame": 600,
+          "out_frame": 660
+        }
+      ],
+      "words": [
+        {
+          "text": "你选",
+          "start_frame": 0,
+          "end_frame": 18,
+          "source_ranges": [
+            {
+              "edl_id": "hook-a",
+              "source_id": "recording-a",
+              "in_frame": 600,
+              "out_frame": 618
+            }
+          ]
+        },
+        {
+          "text": "哪一个？",
+          "start_frame": 18,
+          "end_frame": 51,
+          "source_ranges": [
+            {
+              "edl_id": "hook-a",
+              "source_id": "recording-a",
+              "in_frame": 618,
+              "out_frame": 651
+            }
+          ]
+        }
+      ],
+      "emphasis": {
+        "text": "哪一个？",
+        "word_indices": [
+          1
+        ],
+        "anchor_frame": 18,
+        "duration_frames": 7,
+        "scale": 1.4
+      }
+    },
+    {
+      "id": "c002",
+      "start_frame": 60,
+      "end_frame": 90,
+      "speaker_id": "guest",
+      "text": "看用途。",
+      "source_ranges": [
+        {
+          "edl_id": "hook-b",
+          "source_id": "recording-a",
+          "in_frame": 900,
+          "out_frame": 930
+        }
+      ],
+      "words": [
+        {
+          "text": "看用途。",
+          "start_frame": 60,
+          "end_frame": 85,
+          "source_ranges": [
+            {
+              "edl_id": "hook-b",
+              "source_id": "recording-a",
+              "in_frame": 900,
+              "out_frame": 925
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c003",
+      "start_frame": 90,
+      "end_frame": 180,
+      "speaker_id": "host",
+      "text": "先看任务，再选工具。",
+      "source_ranges": [
+        {
+          "edl_id": "body",
+          "source_id": "recording-a",
+          "in_frame": 0,
+          "out_frame": 90
+        }
+      ],
+      "words": [
+        {
+          "text": "先看",
+          "start_frame": 90,
+          "end_frame": 110,
+          "source_ranges": [
+            {
+              "edl_id": "body",
+              "source_id": "recording-a",
+              "in_frame": 0,
+              "out_frame": 20
+            }
+          ]
+        },
+        {
+          "text": "任务",
+          "start_frame": 110,
+          "end_frame": 126,
+          "source_ranges": [
+            {
+              "edl_id": "body",
+              "source_id": "recording-a",
+              "in_frame": 20,
+              "out_frame": 36
+            }
+          ]
+        },
+        {
+          "text": "，再选",
+          "start_frame": 126,
+          "end_frame": 145,
+          "source_ranges": [
+            {
+              "edl_id": "body",
+              "source_id": "recording-a",
+              "in_frame": 36,
+              "out_frame": 55
+            }
+          ]
+        },
+        {
+          "text": "工具。",
+          "start_frame": 145,
+          "end_frame": 171,
+          "source_ranges": [
+            {
+              "edl_id": "body",
+              "source_id": "recording-a",
+              "in_frame": 55,
+              "out_frame": 81
+            }
+          ]
+        }
+      ],
+      "emphasis": {
+        "text": "任务",
+        "word_indices": [
+          1
+        ],
+        "anchor_frame": 110,
+        "duration_frames": 7,
+        "scale": 1.4
+      }
+    }
+  ],
+  "visual_events": [
+    {
+      "id": "identity",
+      "kind": "identity",
+      "start_frame": 180,
+      "end_frame": 240,
+      "exclusive_group": "primary_information",
+      "source_caption_ids": [],
+      "semantic": {
+        "enter": "真实双人全景已经停稳",
+        "hold": "姓名与简介稳定阅读",
+        "change": "整组保持",
+        "exit": "阅读完成，整组退出"
+      }
+    },
+    {
+      "id": "header-a",
+      "kind": "header",
+      "start_frame": 246,
+      "end_frame": 330,
+      "exclusive_group": "primary_information",
+      "source_caption_ids": [
+        "c003"
+      ],
+      "semantic": {
+        "enter": "身份整组退出后，显示当前选择条件",
+        "hold": "条件仍帮助理解",
+        "change": "新条件出现才更新",
+        "exit": "本段话题结束"
+      }
+    }
+  ]
+}
