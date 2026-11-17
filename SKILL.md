@@ -1,9 +1,9 @@
 ---
 name: edit-multi-person-interview-video
-description: 将真实多人访谈按单一问题原声精剪，交付主题切片及完整自媒体发布包，默认含已选中央漫画分格封面、三比例图片、三种字幕和四平台文案。适用于后续录制切片、延续已选风格和局部返修；不合成发言，不自动发布。
+description: "围绕一个问题精剪真实多人访谈，保留提问、回答与必要语境，交付能独立看懂的主题切片及漫画封面、字幕和四平台文案。适用于长访谈整理、后续切片与局部返修；沿用本期已选多人布局，不合成新发言。"
 ---
 
-# 多人访谈视频剪辑
+# 多人访谈主题剪辑
 
 把同一问题的真实提问、回答、追问、理由和反应剪成可独立看懂的一条。默认延续已选的“现场交流 → 必要图解画中画 → 回现场”效果：有明显但有语义的镜头变化，暖灰信息层，两行标题及右侧真实产品Logo，完整字幕中的关键词按原声放大。具体比例、人物、产品、时长和效果数量均由本期内容决定。
 
@@ -37,7 +37,7 @@ description: 将真实多人访谈按单一问题原声精剪，交付主题切�
 - [已接受案例与边界](references/accepted-example.md)：只在需要理解选版原因或评估复刻程度时读；具体人物、产品、切口和计数是案例，不能硬套后续片。
 - [场景计划模板](assets/scene-plan.template.json)：逐项填写语义生命周期、信息互斥与图解完成态。预设是可改起点，不把坐标或字号当成可读性证明。
 - `python3 scripts/timeline_guard.py validate <timeline.json>`检查帧时钟、原速EDL覆盖、字幕／词与源范围、强调和视觉互斥；`map`要求具体EDL实例，避免同一源多次出现时映错位置。详见[时钟参考](references/audio-and-timeline.md)。
-- 主后期可协作[真人口播流程](../edit-talking-head-social-video/SKILL.md)中的声音、真实资料和发布能力；其普通单人口播默认不能覆盖本期多人已选布局。需要渲染时发现并读取当前安装的 `hyperframes` 或用户指定编辑工具；不假设某台机器的浏览器、字体、模型或付费服务恒定可用。
-- 封面默认使用本Skill的[已选中央漫画分格配方](references/comic-panel-cover.md)，同时调用已安装的[真人社媒封面](../produce-social-media-cover/SKILL.md)中的身份、素材来源、确定性排字和实看验收方法。这一明确选版覆盖泛用封面Skill的电影海报等默认方向，不能读到泛用默认后重新改风格。《AI访谈》系列品牌任务才额外使用[系列制作](../produce-ai-interview-series/SKILL.md)。封面的插画处理不授权合成访谈发言。
+- 主后期按需复用包内[声音处理](shared-video/references/editing-and-audio.md)、本期真实资料和[发布能力](shared-video/references/four-platform-delivery.md)；普通单人口播默认不能覆盖本期多人已选布局。需要渲染时发现并读取当前安装的 `hyperframes` 或用户指定编辑工具；不假设某台机器的浏览器、字体、模型或付费服务恒定可用。
+- 封面默认使用本Skill的[已选中央漫画分格配方](references/comic-panel-cover.md)，同时调用已安装的[真人社媒封面](https://github.com/xupengli406-del/produce-social-media-cover/blob/main/SKILL.md)中的身份、素材来源、确定性排字和实看验收方法。这一明确选版覆盖泛用封面Skill的电影海报等默认方向，不能读到泛用默认后重新改风格。《AI访谈》系列品牌任务才额外使用已安装的 `produce-ai-interview-series` 系列制作入口。封面的插画处理不授权合成访谈发言。
 
 不携带私有人像、录音、字体或大媒体。实际资产放本期工程，记录官方／用户来源与权限。制作包不等于上传；用户接受成片也不自动授权发布或联系嘉宾、品牌。
