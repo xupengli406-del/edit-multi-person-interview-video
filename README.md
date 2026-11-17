@@ -37,7 +37,6 @@ git clone https://github.com/xupengli406-del/edit-multi-person-interview-video.g
 
 - [真人口播制作](https://github.com/xupengli406-del/edit-talking-head-social-video)
 - [社媒封面制作](https://github.com/xupengli406-del/produce-social-media-cover)
-- [画面节奏增强](https://github.com/xupengli406-del/enhance-voiceover-video-rhythm)
 
 本Skill已选的中央漫画封面优先于泛用封面流程中的其他默认方向；用户当前明确要求始终优先。
 
